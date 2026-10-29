@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>KOTONEX サポート / Support</title>
+<meta name="description" content="KOTONEX のサポート、よくある質問、動画の掲載停止の依頼（日本語・English）">
+<style>
+:root{--bg:#fbfaf7;--fg:#1c1b19;--muted:#5f5b53;--line:#dedad2;--link:#1f5fa8;--card:#fff;--note:#fff6dc}
+@media (prefers-color-scheme:dark){:root{--bg:#141412;--fg:#ecebe6;--muted:#a9a59b;--line:#33312c;--link:#8cbcf2;--card:#1c1b19;--note:#2d2716}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Segoe UI",system-ui,sans-serif}
+main{max-width:44rem;margin:0 auto;padding:24px 16px 64px}
+h1{font-size:1.6rem;line-height:1.3;margin:.5em 0 .25em}
+h2{font-size:1.25rem;margin:2.2em 0 .5em;padding-top:.5em;border-top:1px solid var(--line)}
+h3{font-size:1.05rem;margin:1.6em 0 .3em}
+a{color:var(--link)}
+a:focus-visible,button:focus-visible,textarea:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+.muted{color:var(--muted);font-size:.9rem}
+nav.lang{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0 0}
+nav.lang a{display:inline-block;padding:10px 14px;min-height:44px;border:1px solid var(--line);border-radius:10px;background:var(--card);text-decoration:none}
+details{border:1px solid var(--line);border-radius:10px;background:var(--card);margin:10px 0;padding:0 14px}
+summary{cursor:pointer;padding:12px 0;min-height:44px;font-weight:600}
+.request{border:2px solid var(--link);border-radius:12px;background:var(--card);padding:14px;margin:14px 0}
+.request[hidden]{display:none}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:4px 12px;margin:8px 0}
+dt{color:var(--muted)}dd{margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-all}
+textarea{width:100%;min-height:9rem;font:14px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px}
+button{font:inherit;min-height:44px;padding:8px 16px;border-radius:10px;border:1px solid var(--link);background:var(--link);color:var(--bg);cursor:pointer}
+.contact{background:var(--note);border-radius:10px;padding:12px 14px}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:var(--card);padding:8px}
+footer{margin-top:3em;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<a class="skip" href="#ja">本文へ移動 / Skip to content</a>
+<main>
+<header>
+<p class="muted">KOTONEX</p>
+<h1>サポート<br><span lang="en">Support</span></h1>
+<nav class="lang" aria-label="言語 / Language">
+<a href="#ja" hreflang="ja">日本語</a>
+<a href="#en" hreflang="en" lang="en">English</a>
+<a href="#removal-ja">掲載停止の依頼</a>
+<a href="#removal-en" lang="en">Request removal</a>
+<a href="../privacy.html">プライバシー / Privacy</a>
+</nav>
+</header>
+
+<!-- Shown only when the app opens this page with ?video_id=…&quote_id=… (App/SceneViews.swift ClipSupport.requestURL). Filled by the script below with textContent only. -->
+<section class="request" id="request" hidden aria-live="polite" aria-labelledby="request-title">
+<h2 id="request-title" style="border:0;margin-top:0;padding-top:0">掲載停止の依頼内容 / <span lang="en">Your removal request</span></h2>
+<p>アプリから開いたため、対象の動画と名言が入力済みです。<br><span lang="en">You opened this page from the app, so the video and quote are filled in.</span></p>
+<dl>
+<dt>Video ID</dt><dd id="req-video">—</dd>
+<dt>YouTube</dt><dd><a id="req-link" href="#">—</a></dd>
+<dt>Quote ID</dt><dd id="req-quote">—</dd>
+</dl>
+<label for="req-text">依頼文（コピーしてお送りください） / <span lang="en">Request text (copy and send)</span></label>
+<textarea id="req-text" readonly></textarea>
+<p><button type="button" id="req-copy">コピー / Copy</button> <span id="req-status" class="muted" role="status"></span></p>
+<p class="muted">送り先は下の「お問い合わせ」をご覧ください。 / <span lang="en">See “Contact” below for where to send it.</span></p>
+</section>
+
+<section id="ja" lang="ja" aria-labelledby="ja-title">
+<h2 id="ja-title">日本語</h2>
+
+<h3>よくある質問</h3>
+<details>
+<summary>購入した KOTONEX Pro を復元するには？</summary>
+<p>購入時と同じ Apple ID でサインインした状態で、アプリの「設定」または Pro の画面にある「購入を復元」をタップしてください。購入は Apple の App Store で管理されています。アカウント登録は不要です。</p>
+</details>
+<details>
+<summary>サブスクリプションを解約・変更するには？</summary>
+<p>解約や変更は Apple が管理しています。iPhone の「設定」→ 自分の名前 →「サブスクリプション」→「KOTONEX」から行えます。アプリの「設定」にある購読の管理からも開けます。アプリを削除しても解約にはなりません。</p>
+</details>
+<details>
+<summary>返金してほしい</summary>
+<p>返金は Apple が判断・処理します。<a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> から申請してください。私たちは支払い情報を受け取っていないため、直接返金することができません。</p>
+</details>
+<details>
+<summary>動画が再生されない・「この台詞の場面ではありません」と出る</summary>
+<p>動画は YouTube の埋め込みプレーヤーで、再生ボタンを押したときに YouTube から直接再生します。YouTube 上で動画が非公開・削除・埋め込み不可になった場合や、通信状況により再生できない場合は、作品の公式PVに切り替わります（その場合「この台詞の場面ではありません」と表示します）。公式PVもないときは、端末の音声で名言を読み上げます。通信環境を確認してから、もう一度再生してみてください。</p>
+</details>
+<details>
+<summary>動画を見るのに料金はかかりますか？</summary>
+<p>動画はすべて無料で見られます。Pro は絞り込み・検索・壁紙・BGM・透かしなし共有などを開くもので、動画の視聴には関係しません。YouTube 側の広告が表示されることがあります。</p>
+</details>
+<details>
+<summary>読み上げや BGM を止めたい</summary>
+<p>アプリの「設定」で、自動読み上げと BGM をそれぞれオフにできます。読み上げは端末内の音声合成で、本人や声優の声ではありません。</p>
+</details>
+<details>
+<summary>個人情報はどう扱われますか？</summary>
+<p>私たちは個人情報を収集しません。詳しくは<a href="../privacy.html#ja">プライバシーポリシー</a>をご覧ください。</p>
+</details>
+
+<h3 id="removal-ja">動画の掲載停止を依頼する</h3>
+<p>YouTube 動画の投稿者・権利者の方は、本アプリでの動画の掲載停止を依頼できます。アプリでは、各動画の「掲載の停止を依頼」から、このページを対象の情報つきで開けます。</p>
+<p>依頼には次の内容を含めてください。</p>
+<ul>
+<li><strong>動画 ID</strong>（YouTube の動画 ID。例：<code>watch?v=</code> の後ろの11文字）</li>
+<li><strong>名言 ID</strong>（例：<code>ani-001</code>。アプリの依頼画面に表示されます。わからない場合は、作品名と台詞でも構いません）</li>
+<li>あなたと動画の関係（投稿者本人・権利者・その代理人など）</li>
+<li>返信の連絡先</li>
+</ul>
+<p>依頼を受けた動画は、<strong>次のアプリの更新で</strong>掲載から外します。外した後、その名言は作品の公式PVまたは端末の読み上げに切り替わります。なお、YouTube 上で動画を非公開・削除・埋め込み不可にした場合は、その時点からアプリでも再生されなくなります。</p>
+
+<h3>お問い合わせ</h3>
+<div class="contact">
+<p>お問い合わせ・掲載停止の依頼は、<a href="https://github.com/Tak-min/kotonex/issues/new" rel="noopener">こちらの窓口（GitHub）</a>から送ってください。上の依頼文を貼り付けてください。通常、次のアプリの更新で対応します。</p>
+</div>
+</section>
+
+<section id="en" lang="en" aria-labelledby="en-title">
+<h2 id="en-title">English</h2>
+
+<h3>FAQ</h3>
+<details>
+<summary>How do I restore KOTONEX Pro?</summary>
+<p>Sign in with the same Apple ID you used to buy it, then tap “Restore purchases” in the app’s Settings or on the Pro screen. Purchases are managed by Apple’s App Store; no account with us is needed.</p>
+</details>
+<details>
+<summary>How do I cancel or change my subscription?</summary>
+<p>Subscriptions are managed by Apple. Open iPhone Settings → your name → Subscriptions → KOTONEX. You can also open it from subscription management in the app’s Settings. Deleting the app does not cancel the subscription.</p>
+</details>
+<details>
+<summary>I’d like a refund</summary>
+<p>Refunds are decided and processed by Apple. Request one at <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>. We do not receive payment details, so we cannot issue refunds directly.</p>
+</details>
+<details>
+<summary>A video won’t play, or it says “not this exact scene”</summary>
+<p>Videos stream directly from YouTube in its embedded player after you tap Play. If a video has been made private, deleted or non-embeddable on YouTube, or can’t load on your connection, the app switches to the series’ official trailer, labeled “not this exact scene”. If there is no trailer, your device reads the quote aloud. Check your connection and try playing again.</p>
+</details>
+<details>
+<summary>Do I have to pay to watch videos?</summary>
+<p>No. Every video is free to watch. Pro unlocks filters, search, wallpapers, music tracks and watermark-free sharing; it never affects video playback. YouTube may show its own ads.</p>
+</details>
+<details>
+<summary>How do I turn off read-aloud or music?</summary>
+<p>In the app’s Settings, you can turn automatic read-aloud and background music off separately. Read-aloud uses your device’s speech synthesizer, not the speaker’s or an actor’s voice.</p>
+</details>
+<details>
+<summary>What happens to my personal data?</summary>
+<p>We do not collect personal data. See the <a href="../privacy.html#en">Privacy Policy</a>.</p>
+</details>
+
+<h3 id="removal-en">Request removal of a video</h3>
+<p>If you uploaded a YouTube video shown in the app, or hold rights in it, you can ask us to remove it from the app. In the app, “Request removal” on any clip opens this page with the details filled in.</p>
+<p>Please include:</p>
+<ul>
+<li><strong>Video ID</strong> (the YouTube video ID, e.g. the 11 characters after <code>watch?v=</code>)</li>
+<li><strong>Quote ID</strong> (e.g. <code>ani-001</code>, shown on the in-app request screen; if you don’t have it, the series and line are fine)</li>
+<li>Your relationship to the video (uploader, rights holder, or their representative)</li>
+<li>How to reply to you</li>
+</ul>
+<p>Reported clips are removed <strong>in the next app update</strong>. After removal, that quote falls back to the series’ official trailer or on-device read-aloud. If you make the video private, delete it or turn off embedding on YouTube, it stops playing in the app right away.</p>
+
+<h3>Contact</h3>
+<div class="contact">
+<p>Send questions and removal requests through <a href="https://github.com/Tak-min/kotonex/issues/new" rel="noopener">this contact page (GitHub)</a>. Paste the request text above. We usually act on it in the next app update.</p>
+</div>
+</section>
+
+<footer>
+<p><a href="#ja">日本語</a> · <a href="#en" lang="en">English</a> · <a href="../privacy.html">プライバシー / Privacy</a></p>
+</footer>
+</main>
+<script>
+(function () {
+  // Parameters sent by the app: subject, video_id, quote_id (App/SceneViews.swift ClipSupport.requestURL).
+  var q = new URLSearchParams(location.search);
+  var video = (q.get("video_id") || "").trim();
+  var quote = (q.get("quote_id") || "").trim();
+  if (!/^[A-Za-z0-9_-]{6,20}$/.test(video)) video = "";
+  if (!/^[A-Za-z0-9_-]{1,40}$/.test(quote)) quote = "";
+  if (!video && !quote) return;
+  var watch = video ? "https://www.youtube.com/watch?v=" + video : "";
+  var subject = "KOTONEX video removal: " + (video || "-") + " / " + (quote || "-");
+  document.getElementById("req-video").textContent = video || "—";
+  document.getElementById("req-quote").textContent = quote || "—";
+  var link = document.getElementById("req-link");
+  if (watch) { link.textContent = watch; link.href = watch; link.rel = "noopener noreferrer"; }
+  else { link.removeAttribute("href"); }
+  document.getElementById("req-text").value = [
+    "件名 / Subject: " + subject,
+    "Video ID: " + (video || "-"),
+    "YouTube: " + (watch || "-"),
+    "Quote ID: " + (quote || "-"),
+    "関係 / Relationship: (投稿者・権利者・代理人 / uploader, rights holder, representative)",
+    "連絡先 / Reply to: "
+  ].join("\n");
+  document.getElementById("request").hidden = false;
+  var status = document.getElementById("req-status");
+  document.getElementById("req-copy").addEventListener("click", function () {
+    var text = document.getElementById("req-text").value;
+    var done = function () { status.textContent = "コピーしました / Copied"; };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { fallback(); });
+    } else { fallback(); }
+    function fallback() {
+      var t = document.getElementById("req-text"); t.focus(); t.select();
+      try { document.execCommand("copy"); done(); } catch (e) { status.textContent = "選択して手動でコピーしてください / Select and copy manually"; }
+    }
+  });
+})();
+</script>
+</body>
+</html>
